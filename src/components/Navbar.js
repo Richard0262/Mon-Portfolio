@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav style={{ padding: "20px", backgroundColor: "#222", color: "#fff" }}>
-      <Link to="/" style={{ marginRight: "15px", color: "#fff" }}>Home</Link>
-      <Link to="/about" style={{ marginRight: "15px", color: "#fff" }}>About</Link>
-      <Link to="/projects" style={{ marginRight: "15px", color: "#fff" }}>Projects</Link>
-      <Link to="/contact" style={{ color: "#fff" }}>Contact</Link>
+    <nav className="navbar">
+      <h1 className="logo">
+        <span className="bracket">&lt;</span>
+        Richard Dev
+        <span className="bracket">/&gt;</span>
+      </h1>
+
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
     </nav>
   );
 }

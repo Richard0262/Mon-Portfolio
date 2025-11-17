@@ -1,0 +1,25 @@
+.about {
+  background-color: #000;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.about h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.about p {
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ddd;
+}
